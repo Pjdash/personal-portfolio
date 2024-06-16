@@ -1,0 +1,12 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f0f0f0; /* Background color for the entire page */
+}
+.about .block{
+    height:400px;
+    width:350px;
+    background-color: brown;
+}

@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-
-function App() {
+import NavBar from './NavBar';
+import About from './About';
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+    <NavBar/>
+    <div className='first'>
+    <div class="custom-shape-divider-top-1718530928">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div className='photo'></div>
 
-export default App;
+  <div className='heading'>
+   <p> <h1> Hi! I am</h1></p>
+   <p> <h1> Palak Jain</h1></p>
+   <p> <h1> An Engineer</h1></p>
+
+    </div>
+  
+
+<div class="custom-shape-divider-bottom-1718531381">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+</div>
+<About/>
+
+</>
+
+  )
+}

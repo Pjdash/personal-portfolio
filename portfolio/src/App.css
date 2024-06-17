@@ -4,7 +4,7 @@
 
 .navbar{
 
-  background-color: rgb(81, 150, 211);
+  background-color: rgb(242, 242, 242);
   z-index: 10;
 }
 .first{
@@ -35,7 +35,7 @@
 }
 
 .custom-shape-divider-top-1718530928 .shape-fill {
-  fill: #b6acac;
+  fill: #ffffff;
 }
 .custom-shape-divider-bottom-1718531381 {
   position: absolute;
@@ -55,7 +55,7 @@
 }
 
 .custom-shape-divider-bottom-1718531381 .shape-fill {
-  fill: #b4abab;
+  fill: #ffffff;
 }
 
  .first .photo{
@@ -70,5 +70,9 @@
 }
 .first .heading{
   grid-column:4 ;
- color:#b4abab
+ color:#ffffff
+}
+
+ .about{
+  margin-top: 500px;
 }

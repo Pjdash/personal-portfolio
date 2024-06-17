@@ -4,13 +4,19 @@ import './About.css'
 export default function About() {
   return (
     <div className='about'>
-        <div className='block'></div>
-        <span><p>  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
-        Line 14:11:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEA </p></span>
+         <h1> About </h1>
+        <div className='block'>
+          <h2> Description</h2>
+        <span><p> Hello! I am Palak Jain, a first-year Mechanical Engineering student at MNNIT Allahabad with a strong passion for coding and technology. I have successfully completed my training in MERN stack web development and am currently expanding my expertise in Machine Learning. Additionally, I have a keen interest in the Internet of Things (IoT).
+
+        </p><p>Through my academic journey and hands-on projects, I have developed a solid foundation in both software and hardware domains.  exploring opportunities in the fields of web development, machine learning, and IoT. </p></span>
         <div className='nav'>
             <ul>
-                <li><a>experience</a></li>
+                <li><a href="#">experience</a></li>
+                <li><a href="#"> skills</a></li>
+                <li><a href="#">education</a></li>
             </ul>
+        </div>
         </div>
     </div>
   )

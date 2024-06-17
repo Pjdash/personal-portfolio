@@ -1,4 +1,4 @@
-.Project {
+/* .Project {
     text-align: center;
     background-color: #166672;
   }
@@ -47,6 +47,102 @@
   .btn:hover {
     background-color: #0056b3;
   }
+  .custom-shape-divider-top-1718603246 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-top-1718603246 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 308px;
+  }
+  
+  .custom-shape-divider-top-1718603246 .shape-fill {
+    fill: white;
+  }
+  
+  .custom-shape-divider-bottom-1718603296 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1718603296 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 308px;
+  }
+  
+  .custom-shape-divider-bottom-1718603296 .shape-fill {
+    fill: white;
+  }
+   */
+   .Project {
+    display: flex;
+    flex-wrap: wrap; /* Ensures that cards wrap to the next line if they overflow */
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: flex-start; /* Aligns cards at the start of the cross-axis */
+    text-align: center;
+    background-color: #166672;
+     /* Optional: Add some padding for better spacing */
+  }
+  
+  .card {
+    margin: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 300px; /* Optional: Set a fixed width for consistency */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
   .custom-shape-divider-top-1718603246 {
     position: relative;
     top: 0;

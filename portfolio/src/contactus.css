@@ -1,4 +1,4 @@
-.contact {
+/* .contact {
     display: grid;
     color: black;
     grid-template-columns: 1fr 3fr 3fr;
@@ -7,29 +7,34 @@
 .title{
     margin-left: 80px;
     grid-row: 1;
-    grid-column: 2 / 3;
+    grid-column: 1 / 3;
 }
 span{
     margin-left: 80px;
     margin-top: 70px;
     grid-row: 1;
     grid-column: 2;
+    margin-top: 120px;
 }
 .contact-box {
     grid-column: 3 / 5;
     grid-row: 1 / 3;
     max-width: 430px;
-    height: auto; /* Adjust to auto height for better responsiveness */
+    height: auto; 
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border:2px solid #dfd3d3;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Corrected spelling from "centre" to "center" */
+    justify-content: center; 
     align-items: center;
-    padding: 20px; /* Added padding for inner spacing */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
-    
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.contact-box:hover{
+    transform: scale(1.05);
+}
 
 .contact-box div {
     width: 100%;
@@ -51,7 +56,7 @@ span{
 
 .contact-box input, .contact-box textarea {
     width: 100%;
-    padding: 20px 20px 20px 40px; /* Adjusted padding for input/textarea */
+    padding: 20px 20px 20px 40px;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -60,7 +65,7 @@ span{
 
 textarea {
     resize: none;
-    height: 150px; /* Set height for textarea */
+    height: 150px; 
     background-color: lightgrey;
 }
 
@@ -91,6 +96,120 @@ button:hover {
 .message .success, .message .problem {
     font-size: 20px;
     position: absolute;
+    animation: button 0.3s linear;
+    display: none;
+}
+
+.message .success {
+    color: green;
+}
+
+.message .problem {
+    color: red;
+} */
+.contact {
+    display: grid;
+    color: black;
+    grid-template-columns: 0.5fr 3fr 3fr;
+    grid-template-rows: 200px auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.title {
+    margin-left: 80px;
+    grid-row: 1;
+    grid-column: 2 / 3;
+}
+
+span {
+    margin-left: 80px;
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 120px;
+}
+
+.contact-box {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+    width: 100%;
+    max-width: 430px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid #dfd3d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+}
+
+.name, .email, .message-box {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    left: 15px;
+    font-size: 20px;
+    color: #bbb;
+}
+
+.name input, .email input, .message-box textarea {
+    background-color: lightgray;
+    width: 100%;
+    padding: 15px 20px 15px 50px; /* Adjusted padding for input/textarea to make space for icon */
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.message-box textarea {
+    resize: none;
+    height: 150px;
+}
+
+.button {
+    width: 100%;
+}
+
+ button {
+    width: 100%;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #375e7d;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+ button:hover {
+    background-color: #218838;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.message .success, .message .problem {
+    font-size: 20px;
     animation: button 0.3s linear;
     display: none;
 }

@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <h3>Contact Me</h3>
-        <p>Email: your-email@example.com</p>
+        <p>Email: your-jainpalak573@gmail.com</p>
         <div className="social-icons">
           <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} />

@@ -6,6 +6,10 @@
 
   background-color: rgb(242, 242, 242);
   z-index: 10;
+  font-weight: 500;
+}
+.nav-item:hover{
+  text-decoration: underline;
 }
 .first{
   position: absolute;
@@ -13,8 +17,30 @@
   height:500px;
   background-color:#166672;
   display: grid;
-  grid-auto-columns: 0.5fr 3fr 1fr 2fr;
+  grid-auto-columns: 0.5fr 2fr 1fr 2fr;
   grid-template-rows: 1fr 1fr 0.5fr;
+}
+.first::before{
+  content:"";
+  position: absolute;
+  height: 500px;
+  width:60px;
+  overflow: hidden;
+  background-color:rgba(255,255,255,0.3);
+  left:-150px;
+  transform: skewX(-30deg);
+}
+.first:hover:before{
+  animation: slide 1s;
+}
+@keyframes slide {
+  0%,100%{
+    left:0%;
+  }
+  50%{
+    left:100%;
+  }
+  
 }
 .custom-shape-divider-top-1718530928 {
   position: relative;
@@ -68,11 +94,63 @@
   background-size: cover;
   background-position: center;
 }
-.first .heading{
-  grid-column:4 ;
- color:#ffffff
+.heading .animate-text {
+  position: relative;
+  width:fit-content;
 }
 
+.heading .animate-text::before {
+  content: "Engineer";
+  color: rgb(218, 181, 17);
+  animation: words 10s infinite;
+}
+
+.heading .animate-text::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 2px solid rgb(218, 181, 17);
+  right: -8px;
+  background-color:#166672;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #166672;
+  }
+}
+
+@keyframes words {
+  0%, 35% {
+    content: "Engineer";
+  }
+  36%, 70% {
+    content: "Freelancer";
+  }
+  71%, 100% {
+    content: "Developer";
+  }
+}
+
+@keyframes typing {
+  0%, 10%, 15%, 30%, 40%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;
+  }
+  5%, 20%, 35%, 45%, 60%, 65%, 80%, 85% {
+    width: calc(100% + 8px);
+  }
+}
+
+.first button{
+  background-color: #074149;
+  height: 50px;
+  width:150px;
+  border-radius: 20px;
+  margin-top: 70px;
+  
+}
  .about{
   margin-top: 500px;
 }

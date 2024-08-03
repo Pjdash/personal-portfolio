@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 20px;
     background-color: #166672;
     color: white;
     padding: 20px 0;
@@ -34,7 +35,7 @@
   }
   
   .social-icons a:hover {
-    color: #007bff;
+    color: #218838;
   }
   
   .footer-bottom {

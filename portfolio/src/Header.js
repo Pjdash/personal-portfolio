@@ -10,11 +10,14 @@ export default function Header() {
     </svg>
 </div>
 <div className='photo'></div>
+<a href="\public\CV.pdf" download>
+          <button>Download CV</button>
+        </a>
 
   <div className='heading'>
    <p> <h1> Hi! I am</h1></p>
    <p> <h1> Palak Jain</h1></p>
-   <p> <h1> An Engineer</h1></p>
+   <p><h1 className='animate-text'></h1></p>
 
     </div>
   

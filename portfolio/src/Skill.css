@@ -50,3 +50,30 @@
     transition: transform 0.3s ease-in-out;
   }
   
+  /* Media Queries */
+@media (max-width: 1024px) {
+    .skills ul ul li {
+      flex: 1 1 45%; /* Adjust item width for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills ul ul li {
+      flex: 1 1 100%; /* Stack items vertically for small screens */
+      font-size: 1em; /* Adjust font size */
+    }
+  
+    .skills h4 {
+      font-size: 1.25em; /* Reduce heading size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills ul ul li {
+      font-size: 0.9em; /* Further adjust font size for very small screens */
+    }
+  
+    .skills h4 {
+      font-size: 1.1em; /* Further reduce heading size */
+    }
+  }

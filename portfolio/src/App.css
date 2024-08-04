@@ -11,6 +11,56 @@
 .nav-item:hover{
   text-decoration: underline;
 }
+
+/* Media Queries for Navbar */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-item {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px;
+  }
+
+  .nav-item {
+    font-size: 10px;
+    margin: 4px 0;
+  }
+}
 .first{
   position: absolute;
   width: 100%;

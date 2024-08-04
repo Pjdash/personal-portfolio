@@ -15,7 +15,6 @@ export default function Skill() {
             <li><FontAwesomeIcon icon={faHtml5} /> HTML</li>
             <li><FontAwesomeIcon icon={faCss3Alt} /> CSS</li>
             <li><FontAwesomeIcon icon={faReact} /> React JS</li>
-            <li><FontAwesomeIcon icon={faNodeJs} /> Node JS</li>
             <li><FontAwesomeIcon icon={faJsSquare} /> JavaScript</li>
           </ul>
         </li>
@@ -24,10 +23,10 @@ export default function Skill() {
           <ul>
             <li><FontAwesomeIcon icon={faNodeJs} /> Express JS</li>
             <li><FontAwesomeIcon icon={faPython} /> Python</li>
-            <li><FontAwesomeIcon icon={faNode} /> Django</li>
-            <li><FontAwesomeIcon icon={faNodeJs} /> Node JS</li>
+            <li><FontAwesomeIcon icon={faPython} /> Django</li>
+            <li><FontAwesomeIcon icon={faNode} /> Node JS</li>
             <li><FontAwesomeIcon icon={faDatabase} /> MongoDB</li>
-            <li><FontAwesomeIcon icon={faJs} /> Firebase</li>
+            <li><FontAwesomeIcon icon={faDatabase} /> Firebase</li>
           </ul>
         </li>
       </ul>

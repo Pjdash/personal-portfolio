@@ -51,3 +51,36 @@
  /* .active.skill{
     display: block;
 }  */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .block {
+        max-width: 90%; /* Make the block narrower on small screens */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .nav ul li {
+        display: block; /* Stack nav items vertically */
+        margin: 5px 0; /* Add margin between nav items */
+    }
+}
+
+@media (max-width: 480px) {
+    .block {
+        max-width: 100%; /* Make the block full width on very small screens */
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    .block h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .block p {
+        font-size: 1em; /* Adjust paragraph size */
+    }
+
+    .nav ul li {
+        display: block; /* Stack nav items vertically */
+        margin: 5px 0; /* Add margin between nav items */
+    }
+}

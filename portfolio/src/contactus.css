@@ -221,3 +221,76 @@ span {
 .message .problem {
     color: red;
 }
+
+
+/* Medium Screens */
+@media (max-width: 1199px) {
+    .contact {
+      grid-template-columns: 1fr 2fr; /* Adjust columns for medium screens */
+    }
+  
+    .title {
+      margin-left: 20px;
+    }
+  
+    span {
+      margin-left: 20px;
+      margin-top: 80px;
+    }
+  
+    .contact-box {
+      grid-column: 1 / 3;
+    }
+  }
+  
+  /* Small Screens */
+  @media (max-width: 992px) {
+    .contact {
+      grid-template-columns: 1fr; /* Stack items vertically */
+    }
+  
+    .title, span {
+      margin-left: 20px;
+      margin-top: 60px;
+    }
+  
+    .contact-box {
+      grid-column: 1;
+      margin: 0 auto;
+    }
+  
+    .name input, .email input, .message-box textarea {
+      font-size: 16px;
+    }
+  
+    button {
+      font-size: 18px;
+    }
+  }
+  
+  /* Extra Small Screens */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 10px;
+    }
+  
+    .title, span {
+      margin-left: 10px;
+      margin-top: 40px;
+    }
+  
+    .contact-box {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .name input, .email input, .message-box textarea {
+      font-size: 14px;
+      padding: 10px 15px 10px 40px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
